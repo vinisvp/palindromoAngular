@@ -9,8 +9,10 @@ import { repeat } from 'rxjs';
 })
 export class PalindromeComponent {
   text: String = '';
+  message: String = '';
   array: String[] = [];
   auxText : String = '';
+  img: String = '';
 
   checkPalind()
   {
@@ -25,10 +27,14 @@ export class PalindromeComponent {
     if (this.text == this.auxText)
     {
       console.log('É um palindromo!');
+      this.img = '../assets/img/yes.png';
+      this.message = 'É um palindromo!';
     }
     else
     {
       console.log('Não é um palindromo!');
+      this.img = '../assets/img/no.png';
+      this.message = 'Não é um palindromo!';
     }
   }
 }

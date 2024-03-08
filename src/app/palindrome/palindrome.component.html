@@ -1,1 +1,5 @@
-<input type="text" (change)="checkPalind()" [(ngModel)]="text">
+<form>
+  <input type="text" (change)="checkPalind()" [(ngModel)]="text" name="text">
+  <p>{{message}}</p>
+  <img src={{img}}>
+</form>
