@@ -1,8 +1,24 @@
 <form>
-  <div>
-    <h1>Indentificador de palindromos</h1>
-    <input type="text" (change)="checkPalind()" [(ngModel)]="text" name="text">
-    <p>{{message}}</p>
-    <img src={{img}}>
+  <div class="p-5">
+    <h1 class="text-center">Indentificador de palindromos</h1>
+    <div class="row mt-5">
+      <div class="p-3 border border-white rounded-5">
+        <h4>Definição:</h4>
+        <p>
+          Uma palavra palíndroma é aquela cuja sequência de letras é simétrica, permitindo uma leitura idêntica da esquerda para a direita ou da direita para a esquerda: ovo, osso, reler, anilina.
+          Em geral, para identificar a palindromia, desconsideram-se os acentos e sinais gráficos, e por isso palavras como afã, aérea e somávamos também são consideradas palíndromos.
+          Além disso, também não é levada em conta a diferença entre maiúsculas e minúsculas, o que faz que com nomes próprios como Ana, Otto, Natan e Neuquén sejam palíndromos.
+          Malba Tahan, provavelmente o primeiro autor a escrever sobre o tema em português, listou 231 palavras palíndromas em língua portuguesa em seu livro "Matemática recreativa".
+        </p>
+      </div>
+    </div>
+    <div class="row my-5 text-center">
+      <label class="form-label">Teste alguma palavra:</label>
+      <input type="text" class="form-control" (change)="checkPalind()" [(ngModel)]="text" name="text">
+    </div>
+    <div class="row justify-content-center text-center">
+      <p>{{message}}</p>
+      <img class="w-25" src={{img}}>
+    </div>
   </div>
 </form>

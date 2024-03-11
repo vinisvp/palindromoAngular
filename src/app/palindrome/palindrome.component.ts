@@ -9,10 +9,10 @@ import { repeat } from 'rxjs';
 })
 export class PalindromeComponent {
   text: String = '';
-  message: String = '';
+  message: String = 'Estou só esperando';
   array: String[] = [];
   auxText : String = '';
-  img: String = '';
+  img: String = '../assets/img/unknown.png';
 
   checkPalind()
   {
